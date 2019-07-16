@@ -11,19 +11,6 @@ function cadastrar() {
 	xmlhttp.send();
 }
 
-function salvar() {
-	var xmlhttp = new XMLHttpRequest();
-
-	xmlhttp.onreadystatechange = function() {
-		if(this.readyState == 4 && this.status == 200) {
-			document.getElementById("conteudo").innerHtml = this.responseText;
-		}
-	};
-
-	xmlhttp.open("POST", "add_submit.php", true);
-	xmlhttp.send();
-}
-
 function editar(id) {
 	var xmlhttp = new XMLHttpRequest();
 

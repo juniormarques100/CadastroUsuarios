@@ -4,7 +4,7 @@ global $pdo;
 $dbname = "login";
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "masterlab";
 
 try {
 	$pdo = new PDO("mysql:dbname=".$dbname.";host=".$dbhost, $dbuser, $dbpass);

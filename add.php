@@ -1,3 +1,6 @@
+<?php
+require "pages/header.php";
+?>
 
 <div class="row justify-content-center mt-5">
 	<div class="col-5">
@@ -6,7 +9,7 @@
 				<strong>CADASTRAR USUÁRIO</strong>
 			</div><!--card-header-->
 			<div class="card-body">
-				<form class="form-login" method="POST">
+				<form class="form-login" method="POST" action="add_submit.php">
 		
 					<div class="form-group">
 						<labelb for="nome">Nome</label>
@@ -28,7 +31,7 @@
 						<input id="fone" class="form-control" type="text" name="fone" placeholder="Seu telefone">
 					</div>
 
-					<input type="submit" class="btn btn-dark" value="Salvar" onclick="salvar()">
+					<input type="submit" class="btn btn-dark" value="Salvar">
 				</form>
 			</div><!--card-body-->
 		</div><!--card-->
